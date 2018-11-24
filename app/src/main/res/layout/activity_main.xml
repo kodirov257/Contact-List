@@ -10,6 +10,6 @@
         android:id="@+id/list_fragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        class="com.example.abdurahmonbek.contactlist.ListMenuFragment" />
+        class="com.example.abdurahmonbek.contactlist.fragments.ListMenuFragment" />
 
 </android.support.constraint.ConstraintLayout>

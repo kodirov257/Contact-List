@@ -23,7 +23,7 @@ public class ContactDetailActivity extends AppCompatActivity {
         contactId.setText(intent.getStringExtra("ContactId"));
         fullName.setText(intent.getStringExtra("FullName"));
         contactNumber.setText(intent.getStringExtra("ContactNumber"));
-        contactPhoto.setImageResource(getResources().getIdentifier(intent.getStringExtra("ContactPhoto"), "drawable", getPackageName()));
+        contactPhoto.setImageResource(intent.getIntExtra("ContactPhoto", R.drawable.contact_128));
     }
 
     private void init() {

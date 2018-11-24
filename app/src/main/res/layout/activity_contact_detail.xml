@@ -1,41 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="30dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ContactDetailActivity">
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <TextView
-            android:id="@+id/contact_id_text_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp" />
+    <ImageView
+        android:id="@+id/contact_photo_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/contacts_image" />
 
-        <ImageView
-            android:id="@+id/contact_photo_image_view"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/contacts_image" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/contact_id_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/full_name_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp" />
+        android:textSize="25sp" />
 
     <TextView
         android:id="@+id/contact_number_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp" />
+        android:textSize="25sp" />
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
